@@ -2,11 +2,14 @@
   height: calc(100vh - 100px);
   overflow: hidden;
   background: linear-gradient(180deg, #0c0c1d, #111132);
+  position: relative;
+
 
   .wrapper {
     max-width: 1024px;
     height: 100%;
     margin: auto;
+
 
     .textContainer {
       height: 100%;
@@ -14,34 +17,41 @@
       display: flex;
       flex-direction: column;
       justify-content: center;
-      gap: 40px;
+      gap: 25px;
+      z-index: 3;
 
       h2 {
-        font-size: 40px;
+        font-size: 50px;
         color: rebeccapurple;
         letter-spacing: 10px;
+        z-index: 3;
       }
 
       h1 {
+        z-index: 3;
         font-size: 60px;
         letter-spacing: 6px;
       }
 
-      .buttons{
-        button{
-            padding: 20px;
-            border: 1px solid white;
-            border-radius: 10px;
-            background-color: transparent;
-            color: white;
-            margin-right: 20px;
-            cursor: pointer;
-            font-weight: 300;
+      .buttons {
+        button {
+          position: relative;
+          padding: 20px;
+          border: 1px solid white;
+          border-radius: 10px;
+          background-color: transparent;
+          color: white;
+          margin-right: 20px;
+          cursor: pointer;
+          font-weight: 300;
+          z-index: 1;
         }
       }
 
       img {
         width: 50px;
+        cursor: pointer;
+        z-index: 3;
       }
     }
   }
@@ -49,20 +59,26 @@
   .imageContainer {
     height: 100%;
     position: absolute;
-    top: 194px;
+    overflow: hidden;
+    top: 0;
     right: 0;
+    
 
     img {
-      width: auto;
-      height: 80%;
+      width: 70vh;
+      height: 100%;
+      z-index: 3;
+      
     }
   }
 
-  .slidingText{
+  .slidingText {
     position: absolute;
-    font-size: 50vh;
-    bottom: -150px;
+    font-size: 40vh;
+    bottom: -60px;
     white-space: nowrap;
     color: #ffffff09;
+    width: 50%;
+    font-weight: bold;
   }
 }

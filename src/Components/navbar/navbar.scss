@@ -1,7 +1,7 @@
 .navbar{
     height: 100px;
-
-.wrapper{
+    
+    .wrapper{
     max-width: 1024px;
     margin: auto;
     display: flex;
@@ -16,6 +16,16 @@
     .social{
         display: flex;
         gap: 20px;
+
+        img{
+            width: 32px;
+            height: 32px;
+            transition: box-shadow 0.3s ease;
+
+  &:hover {
+    box-shadow: 0 0 20px rgb(0, 162, 255);
+  }
+        }
     }
 }
 }

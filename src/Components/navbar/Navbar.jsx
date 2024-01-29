@@ -16,9 +16,9 @@ export const Navbar = () => {
           Ahmad Ali
         </motion.span>
         <div className="social">
-          <a href="#">LinkedIn</a>
-          <a href="#">GitHub</a>
-          <a href="#">Twitter</a>
+          <a href="#"><img src="/linkedin.png" alt="" /></a>
+          <a href="#"><img src="/logo.png" alt="" /></a>
+          <a href="#"><img src="/twitter.png" alt="" /></a>
         </div>
       </div>
     </div>
