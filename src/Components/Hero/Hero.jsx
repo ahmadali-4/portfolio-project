@@ -54,6 +54,10 @@ export const Hero = () => {
           <motion.h1 variants={textVariants}>
             Web Developer and UI designer
           </motion.h1>
+          <motion.h3 variants={textVariants}>
+          I&apos;m a Full Stack Software Engineer with experience in Website,
+          Mobile, and Software development. Check out my projects and skills.
+          </motion.h3>
           <motion.div variants={textVariants} className="buttons">
             <motion.button variants={textVariants}>
               See My Latest Work
@@ -76,9 +80,10 @@ export const Hero = () => {
       >
         SOFTWARE ENGINEER AND DEVELOPER
       </motion.div>
-      <div className="imageContainer">
-        <img src="/mainIconsdark.svg" alt="" />
-      </div>
+      <motion.div className="imageContainer" >
+        <motion.img whileHover={{ scale: 1.1 }}
+    whileTap={{ scale: 0.9 }} src="/mainIconsdark.svg" alt="" />
+      </motion.div>
     </div>
   );
 };

@@ -17,19 +17,16 @@
       display: flex;
       flex-direction: column;
       justify-content: center;
-      gap: 25px;
-      z-index: 3;
+      gap: 20px;
 
       h2 {
-        font-size: 50px;
+        font-size: 60px;
         color: rebeccapurple;
         letter-spacing: 10px;
-        z-index: 3;
       }
 
       h1 {
-        z-index: 3;
-        font-size: 60px;
+        font-size: 40px;
         letter-spacing: 6px;
       }
 
@@ -37,7 +34,9 @@
         button {
           position: relative;
           padding: 20px;
-          border: 1px solid white;
+          // border: 1px solid white;
+          border: 1px solid #7042f88b;
+          opacity: 0.9;;
           border-radius: 10px;
           background-color: transparent;
           color: white;
