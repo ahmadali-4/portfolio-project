@@ -1,14 +1,17 @@
+@import "../../App.scss";
+
 .hero {
   height: calc(100vh - 100px);
   overflow: hidden;
   background: linear-gradient(180deg, #0c0c1d, #111132);
   position: relative;
 
-
   .wrapper {
     max-width: 1024px;
     height: 100%;
     margin: auto;
+
+    
 
 
     .textContainer {
@@ -19,15 +22,55 @@
       justify-content: center;
       gap: 20px;
 
+      @include tablet{
+        width: 70%;
+        padding: 50px;
+  
+        @include mobile{
+          width: 100%;
+          padding: 50px;
+    
+        }
+      }
+
+
+      
+
       h2 {
         font-size: 60px;
         color: rebeccapurple;
         letter-spacing: 10px;
+
+        @include tablet{
+          font-size: 30px;
+       
+        @include mobile{
+          font-size: 30px;
+    
+        }
+      }
       }
 
       h1 {
         font-size: 40px;
         letter-spacing: 6px;
+
+        @include tablet{
+          font-size: 25px;
+    
+        
+        @include mobile{
+          font-size: 35px;
+    
+        }
+      }
+      }
+
+      h3{
+        @include mobile{
+          font-size: 16px;
+    
+        }
       }
 
       .buttons {
@@ -43,7 +86,7 @@
           margin-right: 20px;
           cursor: pointer;
           font-weight: 300;
-          z-index: 1;
+          z-index: 3;
         }
       }
 
@@ -61,12 +104,24 @@
     overflow: hidden;
     top: 0;
     right: 0;
+
+    
+
+    @include mobile{
+      display: none;
+
+    }
     
 
     img {
       width: 70vh;
       height: 100%;
       z-index: 3;
+
+      @include tablet{
+        width: 50vh;
+        height: 100%;
+      }
       
     }
   }
@@ -79,5 +134,11 @@
     color: #ffffff09;
     width: 50%;
     font-weight: bold;
+    z-index: 0;
+
+    @include mobile{
+      font-size: 30vh;
+      bottom: -40px;
+    }
   }
 }

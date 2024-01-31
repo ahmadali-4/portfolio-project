@@ -62,7 +62,7 @@ export const Hero = () => {
             <motion.button variants={textVariants}>
               See My Latest Work
             </motion.button>
-            <motion.button variants={textVariants}>Contact Me</motion.button>
+            <motion.button variants={textVariants} style={{backgroundColor: "white", color: "#111132", fontWeight: "bold"}}>Contact Me</motion.button>
           </motion.div>
           <motion.img
             variants={textVariants}
