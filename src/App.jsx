@@ -12,7 +12,7 @@ const App = () => {
         <Navbar />
         <Hero />
       </section>
-      {/* <section id="About">
+      <section id="About">
         <Parallex />
       </section>
       <section>Services</section>
@@ -20,7 +20,7 @@ const App = () => {
       <section>Portfolio3</section>
       <section>Portfolio3</section>
       <section>Portfolio3</section>
-      <section id="Contact Me">Contact</section> */}
+      <section id="Contact Me">Contact</section>
       
     </div>
   );
