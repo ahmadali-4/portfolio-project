@@ -1,0 +1,59 @@
+.about-section {
+  height: 100vh;
+  background: linear-gradient(180deg, #0c0c1d, #111132);
+  position: relative;
+
+  .wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1024px;
+    height: 100%;
+    margin: auto;
+
+    .image-container {
+      height: 50%;
+      width: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-right: 50px;
+
+      img {
+        width: 500px;
+        height: 500px;
+        border-radius: 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      }
+    }
+
+    .text-container {
+      height: 100%;
+      width: 50%;
+      margin-top: 1rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 20px;
+
+      h2 {
+        font-size: 50px;
+      }
+
+      .tab-buttons {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+      }
+    }
+
+    .list-text {
+      margin-top: 5px;
+      li {
+        margin-top: 5px;
+        margin-bottom: 5px;
+        list-style: none;
+      }
+    }
+  }
+}

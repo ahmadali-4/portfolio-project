@@ -1,0 +1,22 @@
+// _tab-button.scss
+
+.tab-button {
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  outline: none;
+  width: 150px;
+  color: white;
+  p {
+    padding: 0;margin: 0;
+    font-size: 16px;
+    font-weight: bold;
+    // transition: color 0.3s ease;
+    // color: white;
+
+    &:hover {
+      color: #ADB7BE;
+    }
+  }
+  }
+  
