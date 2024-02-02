@@ -19,9 +19,9 @@ const TabButton = ({ active, selectTab, children }) => {
             animate={active ? "active" : "default"}
             variants={variants}
             style={{height: "2px",
-              backgroundColor: "#ffff",// Replace with your primary color
+              backgroundColor: "#ffff",
               marginTop: "10px",
-              marginRight: "5px",}}
+              marginRight: "0px",}}
           ></motion.div>
         )}
     </button>

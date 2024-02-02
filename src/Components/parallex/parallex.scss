@@ -1,3 +1,5 @@
+@import "../../App.scss";
+
 .container {
   overflow: hidden;
   height: 100%;
@@ -12,13 +14,29 @@
     position: absolute;
     height: 100%;
     width: 1200px;
-    top: -450px;
+    top: -470px;
     rotate: 180deg;
+
+    @include tablet{
+      // justify-content: space-around;
+
+      @include mobile{
+        top: -470px;
+        }
+    }
   }
 
   h1 {
     font-size: 100px;
     z-index: 2;
+
+    @include tablet{
+      // justify-content: space-around;
+
+      @include mobile{
+        font-size: 70px;
+        }
+    }
   }
 
   .mountains {
@@ -29,6 +47,15 @@
     height: 100%;
     position: absolute;
     z-index: 3;
+
+    @include tablet{
+      // justify-content: space-around;
+
+      @include mobile{
+        background-size: contain;
+        background-repeat: no-repeat;
+        }
+    }
   }
 
   .stars{
@@ -48,5 +75,16 @@
     background-size: cover;
     background-position: bottom;
     z-index: 2;
+
+    @include tablet{
+      // justify-content: space-around;
+
+      @include mobile{
+        background-size: 900px;
+        background-repeat: no-repeat;
+        }
+    }
+
+    
   }
 }

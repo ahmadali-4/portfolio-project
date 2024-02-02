@@ -19,10 +19,10 @@ const App = () => {
         <Parallex />
       </section>
       <section><Projects/></section>
-      <section>Portfolio3</section>
+      {/* <section>Portfolio3</section>
       <section>Portfolio3</section>
       <section id="Contact Me">Contact</section>
-      
+       */}
     </div>
   );
 };

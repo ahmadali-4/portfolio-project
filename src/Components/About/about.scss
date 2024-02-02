@@ -1,3 +1,5 @@
+@import "../../App.scss";
+
 .about-section {
   height: 100vh;
   background: linear-gradient(180deg, #0c0c1d, #111132);
@@ -11,6 +13,13 @@
     height: 100%;
     margin: auto;
 
+    @include tablet{
+
+      @include mobile{
+        flex-direction: column;
+      }
+    }
+
     .image-container {
       height: 50%;
       width: 50%;
@@ -19,12 +28,37 @@
       justify-content: center;
       margin-right: 50px;
 
+      @include tablet{
+        margin-right: 0px;
+        width: 40%;
+  
+        @include mobile{
+          margin-right: 0;
+          height: 40%;
+          margin-top: 40px;
+        }
+      }
+
       img {
         width: 500px;
         height: 500px;
         border-radius: 20px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+       
+       
+        @include tablet{
+            width: 300px;
+            height: auto;
+ margin-left: 20px;   
+ margin-right: 20px; 
+          @include mobile{
+            width: 200px;
+            height: 200px;
+      
+          }
+        }
       }
+
     }
 
     .text-container {
@@ -36,8 +70,43 @@
       justify-content: center;
       gap: 20px;
 
+      @include tablet{
+        width: 50%;
+        margin-left: 20px;
+  
+        @include mobile{
+          gap: 0px;
+          width: 85%;
+    
+        }
+      }
+
       h2 {
         font-size: 50px;
+
+        @include tablet{
+          // width: 70%;
+          // padding: 50px;
+    
+          @include mobile{
+            margin-bottom: 5px;
+            font-size: 30px;
+      
+          }
+        }
+
+      }
+
+      p{
+        @include tablet{
+          // width: 70%;
+          // padding: 50px;
+    
+          @include mobile{
+            margin-bottom: 5px;
+      
+          }
+        }
       }
 
       .tab-buttons {
